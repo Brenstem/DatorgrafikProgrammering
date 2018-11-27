@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Datorgrafik - Deluppgift 3</title>
+<link rel="stylesheet" href="css/common.css">
+<script src="js/gl-matrix-min.js"></script>
+<script src="js/twgl-full.min.js"></script>
+<script src="js/support.js"></script>
+<script src="js/camera.js"></script>
+<script src="deluppgift3.js"></script>
+<script>
+function start()
+{
+	var canvas = document.getElementById("canvas");
+	var context = canvas.getContext("webgl");
+	if (!context) return;
+	main(context);
+}
+</script>
+</head>
+
+<body onload="start()">
+<canvas id="canvas" width="800" height="500"></canvas>
+</body>
+
+</html>
